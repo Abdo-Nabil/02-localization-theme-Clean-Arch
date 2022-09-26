@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:waslny_user/core/error/failures.dart';
-import 'package:waslny_user/core/usecases/usecase.dart';
 
+import '../../../../core/error/failures.dart';
+import '../../../../core/usecases/usecase.dart';
 import '../entities/theme_entity.dart';
 import '../repositories/theme_repository.dart';
 

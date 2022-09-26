@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:waslny_user/features/localization/presentation/cubits/localization_cubit.dart';
-import 'package:waslny_user/features/theme/presentation/cubits/theme_cubit.dart';
-import 'package:waslny_user/resources/strings_manager.dart';
-import 'package:waslny_user/try.dart';
-
+import 'package:localization_theme_clean_arch/home_screen.dart';
 import 'features/localization/locale/app_localizations_setup.dart';
+import 'features/localization/presentation/cubits/localization_cubit.dart';
 import 'features/theme/app_theme.dart';
+import 'features/theme/presentation/cubits/theme_cubit.dart';
 import 'injection_container.dart';
 
 class MyApp extends StatelessWidget {
@@ -40,8 +37,8 @@ class MyApp extends StatelessWidget {
                 //     AppLocalizationsSetup.localeResolutionCallback,
                 localizationsDelegates:
                     AppLocalizationsSetup.localizationsDelegates,
-                home: Scaffold(
-                  body: Test(),
+                home: const Scaffold(
+                  body: HomeScreen(),
                 ),
               );
             },

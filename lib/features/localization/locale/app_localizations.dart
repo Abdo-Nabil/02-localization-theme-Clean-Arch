@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:waslny_user/core/error/exceptions.dart';
 import 'dart:convert' show json;
+import '../../../core/error/exceptions.dart';
 import 'app_localizations_delegate.dart';
 
 class AppLocalizations {

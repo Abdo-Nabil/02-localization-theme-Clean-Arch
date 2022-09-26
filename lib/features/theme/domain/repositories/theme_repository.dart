@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:waslny_user/features/theme/domain/entities/theme_entity.dart';
 
 import '../../../../core/error/failures.dart';
+import '../entities/theme_entity.dart';
 
 abstract class ThemeRepository {
   Either<Failure, ThemeEntity> getTheme();

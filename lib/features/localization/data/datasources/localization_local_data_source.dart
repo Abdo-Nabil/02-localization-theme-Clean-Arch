@@ -4,11 +4,11 @@ import 'dart:io';
 
 import 'package:dartz/dartz.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:waslny_user/features/localization/data/models/locale_model.dart';
-import 'package:waslny_user/features/localization/locale/app_localizations_setup.dart';
 
 import '../../../../core/error/exceptions.dart';
 import '../../../../resources/strings_manager.dart';
+import '../../locale/app_localizations_setup.dart';
+import '../models/locale_model.dart';
 
 abstract class LocalizationLocalDataSource {
   LocaleModel getLocale();

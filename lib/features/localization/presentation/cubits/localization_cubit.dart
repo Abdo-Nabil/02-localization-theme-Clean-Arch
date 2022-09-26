@@ -3,11 +3,11 @@ import 'dart:ui';
 import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:waslny_user/core/usecases/usecase.dart';
-import 'package:waslny_user/features/localization/domain/usecases/get_locale_use_case.dart';
 
 import '../../../../core/error/failures.dart';
+import '../../../../core/usecases/usecase.dart';
 import '../../domain/entities/local_entity.dart';
+import '../../domain/usecases/get_locale_use_case.dart';
 import '../../domain/usecases/set_locale_use_case.dart';
 import '../../domain/usecases/set_to_system_locale.dart';
 import '../../locale/app_localizations_setup.dart';

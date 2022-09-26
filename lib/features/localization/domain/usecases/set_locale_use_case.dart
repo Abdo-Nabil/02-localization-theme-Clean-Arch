@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
-import 'package:waslny_user/core/error/failures.dart';
-import 'package:waslny_user/features/localization/domain/repositories/localization_repository.dart';
 
+import '../../../../core/error/failures.dart';
 import '../../../../core/usecases/usecase.dart';
 import '../entities/local_entity.dart';
+import '../repositories/localization_repository.dart';
 
 class SetLocaleUseCase implements UseCase<Unit,LocaleEntity>{
   final LocalizationRepository localizationRepository ;

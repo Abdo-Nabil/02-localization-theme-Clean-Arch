@@ -1,14 +1,7 @@
-import 'package:waslny_user/features/localization/data/datasources/localization_local_data_source.dart';
-import 'package:waslny_user/features/localization/domain/repositories/localization_repository.dart';
-import 'package:waslny_user/features/localization/domain/usecases/get_locale_use_case.dart';
-import 'package:waslny_user/features/theme/data/datasources/theme_local_data_source.dart';
-import 'package:waslny_user/features/theme/data/repositories/theme_repository_impl.dart';
-import 'package:waslny_user/features/theme/domain/repositories/theme_repository.dart';
-import 'package:waslny_user/features/theme/domain/usecases/get_theme_use_case.dart';
-import 'package:waslny_user/features/theme/domain/usecases/set_theme_use_case.dart';
-import 'package:waslny_user/features/theme/presentation/cubits/theme_cubit.dart';
-
+import 'features/localization/data/datasources/localization_local_data_source.dart';
 import 'features/localization/data/repositories/localization_repository_impl.dart';
+import 'features/localization/domain/repositories/localization_repository.dart';
+import 'features/localization/domain/usecases/get_locale_use_case.dart';
 import 'features/localization/domain/usecases/set_locale_use_case.dart';
 
 import 'package:get_it/get_it.dart';
@@ -18,6 +11,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'features/localization/domain/usecases/set_to_system_locale.dart';
 import 'features/localization/presentation/cubits/localization_cubit.dart';
+import 'features/theme/data/datasources/theme_local_data_source.dart';
+import 'features/theme/data/repositories/theme_repository_impl.dart';
+import 'features/theme/domain/repositories/theme_repository.dart';
+import 'features/theme/domain/usecases/get_theme_use_case.dart';
+import 'features/theme/domain/usecases/set_theme_use_case.dart';
+import 'features/theme/presentation/cubits/theme_cubit.dart';
 
 final sl = GetIt.instance;
 

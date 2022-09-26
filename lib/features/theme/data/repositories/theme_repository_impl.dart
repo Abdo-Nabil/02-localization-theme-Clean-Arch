@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:waslny_user/core/error/failures.dart';
-import 'package:waslny_user/features/theme/domain/entities/theme_entity.dart';
-import 'package:waslny_user/features/theme/domain/repositories/theme_repository.dart';
 
+import '../../../../core/error/failures.dart';
+import '../../domain/entities/theme_entity.dart';
+import '../../domain/repositories/theme_repository.dart';
 import '../datasources/theme_local_data_source.dart';
 import '../models/theme_model.dart';
 

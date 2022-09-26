@@ -1,15 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:waslny_user/core/extensions/string_extension.dart';
-import 'package:waslny_user/features/theme/presentation/cubits/theme_cubit.dart';
-import 'package:waslny_user/resources/font_manager.dart';
+import 'package:localization_theme_clean_arch/core/extensions/string_extension.dart';
 
-import 'features/localization/locale/app_localizations.dart';
 import 'features/localization/presentation/cubits/localization_cubit.dart';
+import 'features/theme/presentation/cubits/theme_cubit.dart';
 
-class Test extends StatelessWidget {
-  const Test({Key? key}) : super(key: key);
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +15,8 @@ class Test extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'try_again'.tr(context),
-            style: const TextStyle(fontSize: FontSize.s32),
+            'welcome'.tr(context),
+            style: const TextStyle(fontSize: 32),
           ),
           OutlinedButton(
             child: const Text('change to english'),
@@ -41,7 +38,7 @@ class Test extends StatelessWidget {
               BlocProvider.of<LocalizationCubit>(context).setToSystemLocale();
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           //

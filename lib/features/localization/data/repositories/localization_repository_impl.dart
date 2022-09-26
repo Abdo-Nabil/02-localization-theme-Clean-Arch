@@ -1,11 +1,10 @@
 import 'package:dartz/dartz.dart';
-import 'package:waslny_user/core/error/failures.dart';
-import 'package:waslny_user/features/localization/data/models/locale_model.dart';
-import 'package:waslny_user/features/localization/domain/entities/local_entity.dart';
-import 'package:waslny_user/features/localization/domain/repositories/localization_repository.dart';
-
 import '../../../../core/error/exceptions.dart';
+import '../../../../core/error/failures.dart';
+import '../../domain/entities/local_entity.dart';
+import '../../domain/repositories/localization_repository.dart';
 import '../datasources/localization_local_data_source.dart';
+import '../models/locale_model.dart';
 
 class LocalizationRepositoryImpl implements LocalizationRepository {
   final LocalizationLocalDataSource localizationLocalDataSource;

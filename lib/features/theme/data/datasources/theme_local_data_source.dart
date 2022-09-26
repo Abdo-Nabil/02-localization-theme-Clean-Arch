@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:waslny_user/features/theme/data/models/theme_model.dart';
 
 import '../../../../resources/strings_manager.dart';
+import '../models/theme_model.dart';
 
 abstract class ThemeLocalDataSource {
   ThemeModel getTheme();

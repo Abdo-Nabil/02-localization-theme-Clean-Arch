@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:waslny_user/features/theme/domain/repositories/theme_repository.dart';
 
 import '../../../../core/error/failures.dart';
 import '../entities/theme_entity.dart';
+import '../repositories/theme_repository.dart';
 
 class GetThemeUseCase {
   final ThemeRepository themeRepository;
